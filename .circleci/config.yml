@@ -4,6 +4,12 @@ orbs:
   node: circleci/node@4.6.0
 
 references:
+  workspace_root: &workspace_root ~/project
+
+  attach_workspace:
+    &attach_workspace
+    attach_workspace:
+      at: *workspace_root
 
 jobs:
 
