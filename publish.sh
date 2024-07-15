@@ -9,11 +9,11 @@ if [[ ! $CIRCLE_TAG =~ $pattern ]]; then
 fi
 
 workspace=${BASH_REMATCH[1]}
-if [[ $workspace = 'dotcom-reliability-kit' ]]; then
-  echo "top-level dotcom-reliability-kit package should not be published"
+if [[ $workspace = 'fetch-mock-monorepo' ]]; then
+  echo "top-level fetch-mock-monorepo package should not be published"
   exit 1
 else
-  workspace="@dotcom-reliability-kit/$workspace"
+  workspace="packages/$workspace"
 fi
 
 npm publish --workspace "$workspace" --access=public "$@"
