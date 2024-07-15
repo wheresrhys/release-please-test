@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.6](https://github.com/wheresrhys/release-please-test/compare/rp-test2-v2.0.5...rp-test2-v2.0.6) (2024-07-15)
+
+
+### Bug Fixes
+
+* fix bad merge ([66c10bc](https://github.com/wheresrhys/release-please-test/commit/66c10bcb7d277eb681583621da6594f93951bddc))
+* renamed package directories ([05dd95d](https://github.com/wheresrhys/release-please-test/commit/05dd95d1ca658b36a089cf53d88d7984a9058e0b))
+
 ## [2.0.5](https://github.com/wheresrhys/release-please-test/compare/rp-test2-v2.0.4...rp-test2-v2.0.5) (2024-07-15)
 
 
