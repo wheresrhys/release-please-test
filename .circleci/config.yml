@@ -1,0 +1,35 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.6.0
+
+references:
+
+jobs:
+
+  publish:
+    docker:
+      - image: cimg/node:20.12
+    steps:
+      - *attach_workspace
+      - run:
+          name: Set npm auth token
+          command: echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" >
+            ${HOME}/.npmrc
+      - run:
+          name: NPM publish
+          command: ./publish.sh
+
+workflows:
+  version: 2
+
+  publish:
+    jobs:
+      - publish:
+          name: publish
+          filters:
+            tags:
+              only:
+                - /^[\w-]+-v\d+\.\d+\.\d+$/
+            branches:
+              ignore: /.*/
