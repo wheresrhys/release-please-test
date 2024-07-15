@@ -1,4 +1,4 @@
 {
-  "packages/rp-test1": "1.0.0",
-  "packages/rp-test1": "2.0.0"
+  "packages/pkg1": "1.0.0",
+  "packages/pkg2": "2.0.0"
 }
