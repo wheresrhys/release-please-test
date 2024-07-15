@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.5](https://github.com/wheresrhys/release-please-test/compare/rp-test2-v2.0.4...rp-test2-v2.0.5) (2024-07-15)
+
+
+### Bug Fixes
+
+* added another file to pkg2 ([e4bfbe6](https://github.com/wheresrhys/release-please-test/commit/e4bfbe692e630ada2005c4e8eacaea7de394471f))
+
 ## [2.0.4](https://github.com/wheresrhys/release-please-test/compare/rp-test2-v2.0.3...rp-test2-v2.0.4) (2024-07-15)
 
 
